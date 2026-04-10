@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+form {
+  margin-top: 20px;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+button {
+  padding: 10px 15px;
+
+  /* ⭐ NEW: spacing above the button */
+  margin-top: 20px;
+}
+.collapsible h3 {
+  cursor: pointer;
+}
+.content {
+  display: none;
+  margin-top: 10px;
+  background: #eee;
+  padding: 10px;
+}
+canvas {
+  margin-top: 20px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+/* Pair card layout for Known/Unknown groups */
+.pair-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pair-card {
+  flex: 1 1 260px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 15px 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+
+  /* ⭐ NEW: vertical spacing between first and second card */
+  margin-bottom: 20px;
+}
+
+.pair-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.pair-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ⭐ Updated input spacing fix */
+.input-group input {
+  width: calc(100% - 8px);   /* increased from -4px → -8px */
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Result styled like an input field */
+.result-box {
+  padding: 8px 10px;
+  min-height: 36px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+}
